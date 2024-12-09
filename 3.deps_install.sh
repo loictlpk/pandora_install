@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # VALKEY INSTALL
-sudo apt-get update
-sudo apt install build-essential tcl
+sudo apt-get update -y
+sudo apt install -y build-essential tcl
 
 git clone https://github.com/valkey-io/valkey.git
 cd valkey
@@ -14,8 +14,8 @@ cd ..
 
 
 # KVROCKS INSTALL
-sudo apt-get update
-sudo apt install git gcc g++ make cmake autoconf automake libtool python3 libssl-dev
+sudo apt-get update -y
+sudo apt install -y git gcc g++ make cmake autoconf automake libtool python3 libssl-dev
 git clone --recursive  https://github.com/apache/kvrocks.git kvrocks
 cd kvrocks
 git checkout 2.10
@@ -24,17 +24,17 @@ cd ..
 
 
 # OTHERS DEPS
-sudo apt install python3-dev  # for compiling things
-sudo apt install libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0  # For HTML -> PDF
-sudo apt install libreoffice-nogui # For Office -> PDF
-sudo apt install exiftool  # for extracting exif information
-sudo apt install unrar  # for extracting rar files
-sudo apt install libxml2-dev libxslt1-dev antiword unrtf poppler-utils tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig  # for textract
-sudo apt install libssl-dev  # seems required for yara-python
-sudo apt install libcairo2-dev  # Required by reportlab
+sudo apt install -y python3-dev  # for compiling things
+sudo apt install -y libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0  # For HTML -> PDF
+sudo apt install -y libreoffice-nogui # For Office -> PDF
+sudo apt install -y exiftool  # for extracting exif information
+sudo apt install -y unrar  # for extracting rar files
+sudo apt install -y libxml2-dev libxslt1-dev antiword unrtf poppler-utils tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig  # for textract
+sudo apt install -y libssl-dev  # seems required for yara-python
+sudo apt install -y libcairo2-dev  # Required by reportlab
 # sudo add-apt-repository ppa:libreoffice/ppa
-# sudo apt-get update
-# sudo apt-get install libreoffice
+# sudo apt-get update -y
+# sudo apt-get install -y libreoffice
 
 #PANDORA INSTALL 
 git clone https://github.com/pandora-analysis/pandora.git
