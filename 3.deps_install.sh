@@ -47,7 +47,7 @@ cp config/generic.json.sample config/generic.json
 
 
 #ANTIVIRUS INSTALL
-sudo apt-get install clamav-daemon
+sudo apt install -y clamav-daemon
 # In order for the module to work, you need the signatures.
 # Running the command "freshclam" will do it but if the script is already running
 # (it is started by the systemd service clamav-freshclam)
