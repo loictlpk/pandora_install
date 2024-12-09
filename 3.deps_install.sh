@@ -32,6 +32,7 @@ sudo apt install -y unrar  # for extracting rar files
 sudo apt install -y libxml2-dev libxslt1-dev antiword unrtf poppler-utils tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig  # for textract
 sudo apt install -y libssl-dev  # seems required for yara-python
 sudo apt install -y libcairo2-dev  # Required by reportlab
+sudo apt install -y python3-poetry
 # sudo add-apt-repository ppa:libreoffice/ppa
 # sudo apt-get update -y
 # sudo apt-get install -y libreoffice
