@@ -19,7 +19,7 @@ sudo apt install -y git gcc g++ make cmake autoconf automake libtool python3 lib
 git clone --recursive  https://github.com/apache/kvrocks.git kvrocks
 cd kvrocks
 git checkout 2.10
-./x.py build
+sudo ./x.py build
 cd ..
 
 
@@ -43,7 +43,7 @@ cd pandora  # if you're not already in the directory
 sudo poetry install
 sudo echo PANDORA_HOME="`pwd`" >> .env
 sudo poetry run python tools/3rdparty.py
-cp config/generic.json.sample config/generic.json
+sudo cp config/generic.json.sample config/generic.json
 
 
 #ANTIVIRUS INSTALL
