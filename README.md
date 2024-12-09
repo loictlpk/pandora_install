@@ -1,3 +1,8 @@
+```bash
+git clone https://github.com/loictlpk/pandora_install
+
+cd pandora_install
+
 chmod +x *.sh
 
 ./1. ...
@@ -5,3 +10,5 @@ chmod +x *.sh
 ./2. ...
 
 ./3. ...
+
+```
