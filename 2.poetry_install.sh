@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pipx install poetry
+sudo pipx install poetry
