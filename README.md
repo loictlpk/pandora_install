@@ -1,3 +1,8 @@
+# system
+More than 8Gb RAM
+30 Gb HDD
+
+# use
 ```bash
 git clone https://github.com/loictlpk/pandora_install
 
