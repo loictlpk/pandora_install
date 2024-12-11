@@ -1,6 +1,6 @@
 # system
-More than 8Gb RAM
-30 Gb HDD
+- More than 8Gb RAM
+- 30 Gb HDD
 
 # use
 ```bash
