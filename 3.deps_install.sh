@@ -73,6 +73,10 @@ sudo wget http://cdn.download.comodo.com/av/updates58/sigs/bases/bases.cav -O /o
 cd pandora
 for file in pandora/workers/*.sample; do cp -i ${file} ${file%%.sample}; done
 
+#APPARMOR INSTALL
+sudo apt install apparmor-utils  # Installs utils for apparmor
+sudo sed -i '/profile libreoffice-soffice /usr/lib/libreoffice/program/soffice.bin {/a\owner @{HOME}/pandora/tasks/** rwk,' /etc/apparmor.d/usr.lib.libreoffice.program.soffice.bin && aa-enforce /etc/apparmor.d/usr.lib.libreoffice*
+
 # Update and launch
 poetry run update --yes
 
