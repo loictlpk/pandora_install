@@ -1,4 +1,4 @@
-# PROJET_LINK
+# PROJECT_LINK
 https://github.com/pandora-analysis/pandora
 
 # system
