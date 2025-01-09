@@ -71,5 +71,6 @@ for file in pandora/workers/*.sample; do cp -i ${file} ${file%%.sample}; done
 # Update and launch
 poetry run update --yes
 
-# START PANDORA
-poetry run start
+# START OR STOP PANDORA
+# poetry run start
+# poetry run stop
