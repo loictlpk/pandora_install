@@ -61,6 +61,7 @@ sudo apt install -y clamav-daemon
 sudo systemctl stop clamav-freshclam.service  # Stop the service
 sudo freshclam  # Run the signatures update
 sudo systemctl start clamav-freshclam.service # Start the service so we keep getting the updates
+sudo systemctl enable clamav-freshclam.service # Enable at startup
 sudo service clamav-daemon start
 
 #COMMODO INSTALL
