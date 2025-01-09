@@ -69,7 +69,7 @@ sudo service clamav-daemon start
 for file in pandora/workers/*.sample; do cp -i ${file} ${file%%.sample}; done
 
 # Update and launch
-sudo poetry run update --yes
+poetry run update --yes
 
 # START PANDORA
-sudo poetry run start
+poetry run start
