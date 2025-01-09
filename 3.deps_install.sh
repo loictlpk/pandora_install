@@ -7,9 +7,9 @@ sudo apt install -y build-essential tcl
 git clone https://github.com/valkey-io/valkey.git
 cd valkey
 git checkout 8.0
-sudo make
+make
 # Optionally, you can run the tests:
-sudo make test
+make test
 cd ..
 
 
@@ -19,7 +19,7 @@ sudo apt install -y git gcc g++ make cmake autoconf automake libtool python3 lib
 git clone --recursive  https://github.com/apache/kvrocks.git kvrocks
 cd kvrocks
 git checkout 2.10
-sudo ./x.py build
+./x.py build
 cd ..
 
 
@@ -32,7 +32,7 @@ sudo apt install -y unrar  # for extracting rar files
 sudo apt install -y libxml2-dev libxslt1-dev antiword unrtf poppler-utils tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig  # for textract
 sudo apt install -y libssl-dev  # seems required for yara-python
 sudo apt install -y libcairo2-dev  # Required by reportlab
-sudo apt install -y python3-poetry
+
 # sudo add-apt-repository ppa:libreoffice/ppa
 # sudo apt-get update -y
 # sudo apt-get install -y libreoffice
@@ -40,10 +40,16 @@ sudo apt install -y python3-poetry
 #PANDORA INSTALL 
 git clone https://github.com/pandora-analysis/pandora.git
 cd pandora  # if you're not already in the directory
-sudo poetry install
-sudo echo PANDORA_HOME="`pwd`" >> .env
-sudo poetry run python tools/3rdparty.py
-sudo cp config/generic.json.sample config/generic.json
+python3 -m venv ~/venv
+source ~/venv/bin/activate
+
+## NEED VENV
+pip install -U pip setuptools
+pip install poetry
+poetry install
+echo PANDORA_HOME="`pwd`" >> .env
+poetry run python tools/3rdparty.py
+cp config/generic.json.sample config/generic.json
 
 
 #ANTIVIRUS INSTALL
