@@ -61,11 +61,16 @@ sudo apt install -y clamav-daemon
 sudo systemctl stop clamav-freshclam.service  # Stop the service
 sudo freshclam  # Run the signatures update
 sudo systemctl start clamav-freshclam.service # Start the service so we keep getting the updates
-
 sudo service clamav-daemon start
 
+#COMMODO INSTALL
+cd
+wget https://download.comodo.com/cis/download/installs/linux/cav-linux_x64.deb
+sudo dpkg --ignore-depends=libssl0.9.8 -i cav-linux_x64.deb
+sudo wget http://cdn.download.comodo.com/av/updates58/sigs/bases/bases.cav -O /opt/COMODO/scanners/bases.cav
 
 #WORKERS CONF
+cd pandora
 for file in pandora/workers/*.sample; do cp -i ${file} ${file%%.sample}; done
 
 # Update and launch
