@@ -25,5 +25,7 @@ chmod +x *.sh
 ```bash
 crontab -e
 ```
-
+Then, type :
+```
 @reboot ~/path/to/pandora_start.sh
+```
