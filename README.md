@@ -17,3 +17,10 @@ chmod +x *.sh
 ./3. ...
 
 ```
+
+# pandora at boot
+```bash
+crontab -e
+```
+
+@reboot ~/path/to/pandora_start.sh
