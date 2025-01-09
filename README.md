@@ -1,5 +1,5 @@
 # system
-- More than 8Gb RAM
+- More than 10Gb RAM
 - 30 Gb HDD
 
 # use
