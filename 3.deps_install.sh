@@ -40,10 +40,10 @@ sudo apt install -y libcairo2-dev  # Required by reportlab
 #PANDORA INSTALL 
 git clone https://github.com/pandora-analysis/pandora.git
 cd pandora  # if you're not already in the directory
-python3 -m venv ~/venv
-source ~/venv/bin/activate
 
 ## NEED VENV
+python3 -m venv ~/venv # CREATE VENV
+source ~/venv/bin/activate # ENTER IN VENV 
 pip install -U pip setuptools
 pip install poetry
 poetry install
