@@ -12,7 +12,7 @@ chmod 500 /etc/authbind/byport/80
 
 
 #######IMPORTANT#########
-# Change port and website public url in pandora/config/generic.json to your favourite like this
+# Change port and website public url in pandora/config/generic.json to your favourite one like this
 #    "website_listen_port": 80,
 #    "public_url": "http://0.0.0.0:80",
 
