@@ -8,8 +8,8 @@ https://github.com/pandora-analysis/pandora
 # use
 ```bash
 git clone https://github.com/loictlpk/pandora_install
-mkdir /run/user/1000/dconf
 cd pandora_install
+mkdir /run/user/1000/dconf
 
 chmod +x *.sh
 
