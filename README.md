@@ -19,6 +19,8 @@ chmod +x *.sh
 
 ./3. ...
 
+./4. ...
+
 ```
 
 # pandora at boot
